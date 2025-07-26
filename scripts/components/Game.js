@@ -7,6 +7,7 @@ const Game = () => {
     const [achievements, setAchievements] = useState([]);
     const [showAchievement, setShowAchievement] = useState(false);
     const [currentAchievement, setCurrentAchievement] = useState('');
+    const { useState } = React;
 
     // ... funciones handleOptionSelect, restartGame, etc.
 
