@@ -1,3 +1,4 @@
+const { useState } = React;
 const Game = () => {
     const [currentScene, setCurrentScene] = useState(scenes.start);
     const [inventory, setInventory] = useState([]);
@@ -7,7 +8,6 @@ const Game = () => {
     const [achievements, setAchievements] = useState([]);
     const [showAchievement, setShowAchievement] = useState(false);
     const [currentAchievement, setCurrentAchievement] = useState('');
-    const { useState } = React;
 
     // ... funciones handleOptionSelect, restartGame, etc.
 
