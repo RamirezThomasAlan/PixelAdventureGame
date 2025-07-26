@@ -2,7 +2,7 @@
 
 ¡Hola aventurero! 👋 Soy Thomas Ramirez, y este es mi proyecto PixelAdventureGame: un juego interactivo de decisiones con estilo pixel art, creado con React, HTML y CSS puro.
 
-[![Ver Demo](https://ramirezthomasalan.github.io/PixelAdventureGame/)]
+[![Ver Demo](https://img.shields.io/badge/🌐_Ver_Demo_en_Vivo-FF5722?style=for-the-badge)](https://ramirezthomasalan.github.io/PixelAdventureGame/)
 
 ## 📸 Captura de Pantalla
 ![Preview](preview.png)
