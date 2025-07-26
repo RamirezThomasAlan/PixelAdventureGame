@@ -25,17 +25,17 @@ Luché contra bugs legendarios para lograr:
 
 ## 📂 Estructura del Proyecto
 
-## PixelAdventureGame/
-## ├── index.html
-## ├── styles/
-## │   ├── main.css
-## │   └── responsive.css
-## ├── scripts/
-## │   ├── app.js
-## │   ├── scenes.js
-## │   └── components/
-## │       └── Game.js
-## └── assets/
+# PixelAdventureGame/
+# ├── index.html
+# ├── styles/
+# │   ├── main.css
+# │   └── responsive.css
+# ├── scripts/
+# │   ├── app.js
+# │   ├── scenes.js
+# │   └── components/
+# │       └── Game.js
+# └── assets/
 
 ## 💡 Características Destacadas
 
@@ -57,9 +57,8 @@ Luché contra bugs legendarios para lograr:
 
 MIT License - Libre para modificar y distribuir
 
-## ¡Dale ⭐ al proyecto si disfrutaste la aventura! Fue un gran desafío crear toda la lógica de decisiones y el diseño pixel art puro con CSS.
-
-## 💡 Pro Tip: El fondo está generado completamente con CSS usando gradientes complejos y propiedades de pixelado.
+## 💡 Pro Tip: 
+El fondo está generado completamente con CSS usando gradientes complejos y propiedades de pixelado.
 
 ## 🚧 Próximas Mejoras:
 
@@ -69,4 +68,5 @@ MIT License - Libre para modificar y distribuir
 
     Sistema de puntuación
 
+## ¡Dale ⭐ al proyecto si disfrutaste la aventura! Fue un gran desafío crear toda la lógica de decisiones y el diseño pixel art puro con CSS.
 ## ¡Gracias por jugar! 🎮💙
