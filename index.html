@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventura Pixel Art</title>
-    <!-- Cambia a esta versión PRODUCCIÓN de React -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- React 18 PRODUCTION -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <!-- Babel -->
+    <!-- Babel Standalone -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    <div id="root" style="width: 100%; height: 100vh;"></div>
+    <div id="root"></div>
+
+    <!-- Importamos useState primero -->
+    <script type="text/babel">
+        const { useState } = React;
+    </script>
     
-    <!-- Scripts en ORDEN CORRECTO -->
+    <!-- Cargamos los componentes EN ORDEN -->
     <script src="./scripts/scenes.js" type="text/babel"></script>
     <script src="./scripts/components/Game.js" type="text/babel"></script>
+    
+    <!-- Inicializamos la app -->
     <script type="text/babel">
-      const root = ReactDOM.createRoot(document.getElementById('root'));
-      root.render(<Game />);
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Game />);
     </script>
 </body>
 </html>

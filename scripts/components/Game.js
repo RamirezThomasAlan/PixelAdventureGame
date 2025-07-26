@@ -1,14 +1,12 @@
-const { useState } = React;
-
 const Game = () => {
-    const [currentScene, setCurrentScene] = useState(scenes.start);
-    const [inventory, setInventory] = useState([]);
-    const [health, setHealth] = useState(100);
-    const [history, setHistory] = useState([scenes.start]);
-    const [showHistory, setShowHistory] = useState(false);
-    const [achievements, setAchievements] = useState([]);
-    const [showAchievement, setShowAchievement] = useState(false);
-    const [currentAchievement, setCurrentAchievement] = useState('');
+    const [currentScene, setCurrentScene] = React.useState(scenes.start);
+    const [inventory, setInventory] = React.useState([]);
+    const [health, setHealth] = React.useState(100);
+    const [history, setHistory] = React.useState([scenes.start]);
+    const [showHistory, setShowHistory] = React.useState(false);
+    const [achievements, setAchievements] = React.useState([]);
+    const [showAchievement, setShowAchievement] = React.useState(false);
+    const [currentAchievement, setCurrentAchievement] = React.useState('');
 
     const handleOptionSelect = (option) => {
         if (option.requiresItem && !inventory.includes(option.requiresItem)) {
@@ -37,35 +35,6 @@ const Game = () => {
         setInventory([]);
         setHealth(100);
         setHistory([scenes.start]);
-    };
-
-    const renderOptions = () => {
-        return currentScene.options ? (
-            <div className="options">
-                {currentScene.options.map((option, index) => (
-                    <button 
-                        key={index} 
-                        className="option-btn"
-                        onClick={() => handleOptionSelect(option)}
-                    >
-                        {option.text}
-                    </button>
-                ))}
-            </div>
-        ) : null;
-    };
-
-    const renderFinal = () => {
-        return (
-            <div className="final-scene">
-                <div className="final-image">
-                    {currentScene.image && currentScene.image()}
-                </div>
-                <button className="restart-btn" onClick={restartGame}>
-                    JUGAR DE NUEVO
-                </button>
-            </div>
-        );
     };
 
     return (
@@ -107,7 +76,23 @@ const Game = () => {
                 </div>
             </div>
             
-            {currentScene.final ? renderFinal() : renderOptions()}
+            {currentScene.final ? (
+                <button className="restart-btn" onClick={restartGame}>
+                    JUGAR DE NUEVO
+                </button>
+            ) : (
+                <div className="options">
+                    {currentScene.options?.map((option, index) => (
+                        <button 
+                            key={index} 
+                            className="option-btn"
+                            onClick={() => handleOptionSelect(option)}
+                        >
+                            {option.text}
+                        </button>
+                    ))}
+                </div>
+            )}
             
             <div className={`history-panel ${showHistory ? 'active' : ''}`}>
                 <div className="history-content">
