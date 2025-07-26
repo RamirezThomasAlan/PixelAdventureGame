@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    :root {
+        --pixel-size: 2px;
+    }
+    
+    .scene-text, .option-btn {
+        font-size: 14px;
+    }
+    
+    .title {
+        font-size: 20px;
+    }
+}
