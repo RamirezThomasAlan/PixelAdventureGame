@@ -7,7 +7,7 @@
 ## 📸 Captura de Pantalla
 ![Preview](preview.png)
 
-## 🔧 Tecnologías Usadas
+## 🔧 Tecnologías Usadas 
 - **React 18** (Hooks: useState, efectos)
 - **CSS3** (Variables custom, Grid, animaciones)
 - **Diseño Pixel Art** (Imágenes generadas con CSS)
